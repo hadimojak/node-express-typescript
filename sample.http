@@ -1,12 +1,18 @@
 POST http://127.0.0.1:3000/todos HTTP/1.1
 content-type: application/json
 
-{"text":"annnnnnnnnnnnnn","id"}
+{"text":"annnnnnnnnnnnnn","id":333}
 
 ###
 GET http://127.0.0.1:3000/todos HTTP/1.1
 content-type: application/json
 
 ###
-PUT http://127.0.0.1:3000/todos/123 HTTP/1.1
+PATCH  http://127.0.0.1:3000/todos/777 HTTP/1.1
+content-type: application/json
+
+{"text":"goh"}
+
+###
+DELETE http://127.0.0.1:3000/todos/111 HTTP/1.1
 content-type: application/json
